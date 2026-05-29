@@ -110,6 +110,7 @@ def main_trading_loop():
         time.sleep(20)
 
 if __name__ == "__main__":
+    send_telegram_signal("✅ *Abhi Forex Bot Connection Test:* Server is successfully running!")
     # 1. Flask Server ko alag thread mein chalu karna Render ko khush rakhne ke liye
     server_thread = threading.Thread(target=run_flask)
     server_thread.daemon = True
